@@ -30,29 +30,6 @@ public class FestivalService {
     }
     
     
-    
-    
-//    @Transactional
-//    public Festival createFestival(Festival festival) {
-//        if (festival.getMonth() == null || festival.getMonth().getName() == null) {
-//            throw new RuntimeException("Month cannot be null. Please provide a valid month.");
-//        }
-//
-//        Month month = monthRepository.findByName(festival.getMonth().getName());
-//
-//        if (month == null) {
-//            month = monthRepository.save(new Month(festival.getMonth().getName()));
-//        }
-//
-//        festival.setMonth(month);
-//
-//        if (festival.getFestivalDetail() != null) {
-//            festival.getFestivalDetail().setFestival(festival);
-//        }
-//
-//        return festivalRepository.save(festival);
-//    }
-
 
     @Transactional
     public Festival createFestival(Festival festival) {
